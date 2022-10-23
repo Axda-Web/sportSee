@@ -1,35 +1,31 @@
-import React, { Suspense } from 'react'
 import StyledApp from './App.styled';
-import { ThemeProvider } from 'styled-components';
-import theme from './theme';
 import GlobalStyles from './Global.styled';
 
+//Import Routing components
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
+//Import the components
 import TopNav from './component/topNav/TopNav';
 import SideNav from './component/sideNav'
-// import Loader from './component/loader'
-import Dashboard from './component/dashboard';
-// const Dashboard = React.lazy( async () => await import('./component/dashboard'))
+import Error from './pages/error'
+import Dashboard from './pages/dashboard';
 
+/**
+ * Display the whole Application
+ * @returns {JSX.element} - App component
+ */
 function App() {
   return (
-    
     <StyledApp>
-      <ThemeProvider theme={theme}>
         <GlobalStyles />
         <TopNav />
         <SideNav />
         <BrowserRouter>
           <Routes>
-            <Route  path="/:id" element={<Dashboard />}
-                    // element={ <Suspense fallback={<Loader />}>
-                    //             <Dashboard />
-                    //           </Suspense> }
-                />
+            <Route path="/:id" element={<Dashboard />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </BrowserRouter>
-      </ThemeProvider>
     </StyledApp>
   );
 }

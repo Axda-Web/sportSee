@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: Roboto, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
-        font-size: 1vw;
+        font-size: 16px;
         margin: 0;
         padding: 0;
     }

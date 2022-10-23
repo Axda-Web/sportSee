@@ -4,7 +4,7 @@ const StyledApp = styled.div`
     height: 780px;
     display: grid;
     grid-template-areas:    'topNav topNav'
-                            ' sideNav dashboard';
+                            ' sideNav mainContent';
 
     .top-nav {
         grid-area: topNav;
@@ -26,8 +26,8 @@ const StyledApp = styled.div`
         }
     }
 
-    .dashboard {
-        grid-area: dashboard;
+    .main-content {
+        grid-area: mainContent;
         height: calc(100vh - 70px);
 
         @media (min-width: 1200px) {
