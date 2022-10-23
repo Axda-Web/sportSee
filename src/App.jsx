@@ -22,7 +22,7 @@ function App() {
         <SideNav />
         <BrowserRouter>
           <Routes>
-            <Route path="/:id" element={<Dashboard />} />
+            <Route path="/user/:id" element={<Dashboard />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </BrowserRouter>
