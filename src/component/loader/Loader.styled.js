@@ -36,6 +36,7 @@ const StyledLoader = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -50vw;
 
     .lds-ellipsis {
 
@@ -43,6 +44,8 @@ const StyledLoader = styled.div`
         position: relative;
         width: 80px;
         height: 80px;
+        //transform: translateX(50%);
+
 
         div {
             position: absolute;
@@ -50,7 +53,7 @@ const StyledLoader = styled.div`
             width: 13px;
             height: 13px;
             border-radius: 50%;
-            background: ${({theme}) => theme.colors.primary};
+            background: red;
             animation-timing-function: cubic-bezier(0, 1, 1, 0);
         }
 

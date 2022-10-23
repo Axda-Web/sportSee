@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 import StyledActivity from './Activity.styled'
 
 import { BarChart,
@@ -11,14 +11,13 @@ import { BarChart,
         ResponsiveContainer
         } from 'recharts';
 
-import PropTypes from 'prop-types'
 
 
 /**
- * 
- * @param {boolean}  [Props.active='true']
- * @param {array}   [Props.payload=[]]
- * @returns an activ tooltip or null
+ * Display a custom tooltip
+ * @param {Boolean}  [Props.active='true']
+ * @param {Array}   [Props.payload=[]]
+ * @returns {JSX.element} - CustomTooltip component
  */
  const CustomTooltip=({active, payload})=>{
   if (active) {
@@ -33,10 +32,15 @@ return null;
 }
 
 
+/**
+ * Display a bar chart 
+ * @component
+ * @param {Object[]} data - User activity data
+ * @returns {JSX.Element} - Activity component
+ */
 const Activity = ({data}) => {
 
-
-  const dataTest = [
+  const mockedData = [
     {
         "day": "1",
         "kilogram": 80,
@@ -80,7 +84,7 @@ const Activity = ({data}) => {
         <BarChart
             width={835}
             height={320}
-            data={dataTest}
+            data={data}
             margin={{
                 top: 80,
                 right: 50,
@@ -171,6 +175,6 @@ const Activity = ({data}) => {
 
 export default Activity
 
-// Activity.propTypes = {
-//   data: PropTypes.array.isRequired
-// }
+Activity.propTypes = {
+  data: PropTypes.array.isRequired
+}

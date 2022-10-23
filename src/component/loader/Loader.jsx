@@ -1,6 +1,10 @@
-import React from 'react'
 import StyledLoader from './Loader.styled.js'
 
+
+/**
+ * Display a loader
+ * @returns {JSX.element} - Loader component
+ */
 const Loader = () => {
   return (
     <StyledLoader>

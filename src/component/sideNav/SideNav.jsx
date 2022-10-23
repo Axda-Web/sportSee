@@ -1,22 +1,32 @@
-import React from 'react'
 import StyledSideNav from './SideNav.styled'
 
+//Import icons
+import FitnessIcon from '../../assets/icon-0.png'
+import BikeIcon from '../../assets/icon-1.png'
+import SwimmingIcon from '../../assets/icon-2.png'
+import YogaIcon from '../../assets/icon-3.png'
 
+
+
+/**
+ * Display a side navigation menu
+ * @returns {JSX.element} - SideNav component
+ */
 const SideNav = () => {
   return (
     <StyledSideNav className='side-nav'>
       <div className="nav">
         <div className="nav__item">
-          <img src="./assets/icon-0.png" alt="fitness icon" />
+          <img src={FitnessIcon} alt="fitness icon" />
         </div>
         <div className="nav__item">
-          <img src="./assets/icon-1.png" alt="bike icon" />
+          <img src={BikeIcon} alt="bike icon" />
         </div>
         <div className="nav__item">
-          <img src="./assets/icon-2.png" alt="swimming icon" />
+          <img src={SwimmingIcon} alt="swimming icon" />
         </div>
         <div className="nav__item">
-          <img src="./assets/icon-3.png" alt="yoga icon" />
+          <img src={YogaIcon} alt="yoga icon" />
         </div>
       </div>
       <div className="copyright">Copyright © SportSee 2020 </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 import StyledScore from './Score.styled'
 
 import {
@@ -8,11 +8,17 @@ import {
         PolarAngleAxis 
     } from 'recharts';
 
-import PropTypes from 'prop-types'
 
+
+/**
+ * Display a radial chart 
+ * @component
+ * @param {Object[]} data - User main data
+ * @returns {JSX.Element} - Score component
+ */
 const Score = ({data}) => {
 
-  const dataTest = [{
+  const mockedData = [{
         uv: 12,
         fill: '#E60000'
         }]
@@ -35,7 +41,7 @@ const Score = ({data}) => {
                             }}
                             innerRadius={70} 
                             barSize={10}
-                            data={dataTest}
+                            data={data}
                             startAngle={80}
                             endAngle={450}
                         >
@@ -53,10 +59,7 @@ const Score = ({data}) => {
                         angleAxisId={1}
                         fill="#E60000"
                         cornerRadius="10"
-                        data={[{
-                            uv: 12,
-                            fill: '#E60000'
-                            }]}
+                        data={data}
                     />
             <text   className='score'
                     fontWeight="700"
@@ -65,7 +68,7 @@ const Score = ({data}) => {
                     y="45%"
                     textAnchor='middle'
                 >
-                    {`${dataTest[0]['uv']}%`}
+                    {`${data[0]['uv']}%`}
             </text>
             <text   className='text'
                     fontWeight="500"
@@ -106,6 +109,6 @@ const Score = ({data}) => {
 export default Score
 
 
-// Score.propTypes = {
-//   data: PropTypes.number.isRequired
-// }
+Score.propTypes = {
+  data: PropTypes.array.isRequired
+}

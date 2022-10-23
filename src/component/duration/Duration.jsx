@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 import StyledDuration from './Duration.styled';
 
 import {
@@ -12,9 +12,14 @@ import {
     Rectangle
 } from "recharts";
 
-import PropTypes from 'prop-types'
 
 
+/**
+ * Display a custom tooltip
+ * @param {Boolean}  [Props.active='true']
+ * @param {Array}   [Props.payload=[]]
+ * @returns {JSX.element} - CustomTooltip component
+ */
 const CustomTooltip=({active, payload})=>{
     if (active) {
         return (
@@ -27,6 +32,11 @@ return null;
 }
 
 
+/**
+ * Display a custom cursor
+ * @param {Array} points - Coordonates of the rectangle
+ * @returns {JSX.element} - CustomCursor component
+ */
 const CustomCursor = ({points}) => {
     return <Rectangle   fill="#000000"
                         opacity={0.2}
@@ -36,9 +46,16 @@ const CustomCursor = ({points}) => {
                     />;
 };
 
+
+/**
+ * Display a line chart 
+ * @component
+ * @param {Object[]} data - User average sessions data
+ * @returns {JSX.Element} - Duration component
+ */
 const Duration = ({data}) => {
 
-	const dataSessions = [
+	const mockedData = [
             {
                 "day": 'L',
                 "sessionLength": 30
@@ -70,14 +87,13 @@ const Duration = ({data}) => {
         ]
         
     
-	
   return (
     <StyledDuration className='duration'>
         <ResponsiveContainer width='100%' aspect={1}>
                 <LineChart  style={{backgroundColor: "#FF0000"}}
                             width={258}
                             height={263}
-                            data={dataSessions}
+                            data={data}
                             margin={{
                                 top: 50,
                                 right: -2,
@@ -158,6 +174,6 @@ const Duration = ({data}) => {
 
 export default Duration
 
-// Duration.propTypes = {
-//     data: PropTypes.array.isRequired
-//   }
+Duration.propTypes = {
+    data: PropTypes.array.isRequired
+  }

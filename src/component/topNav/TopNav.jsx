@@ -1,11 +1,15 @@
-import React from 'react'
 import StyledTopNav from './TopNav.styled'
+import Logo from '../../assets/logo.png'
 
+/**
+ * Display a top navigation menu
+ * @returns {JSX.element} - TopNav component
+ */
 const TopNav = () => {
   return (
     <StyledTopNav className='top-nav'>
       	<img	className="logo"
-				src="./assets/logo.png"
+				src={Logo}
 				alt="SportSee logo"
 			/>
 		<nav className='nav'>

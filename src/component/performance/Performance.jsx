@@ -1,5 +1,6 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 import StyledPerformance from './Performance.styled'
+
 import {
         Radar,
         RadarChart,
@@ -9,12 +10,17 @@ import {
         ResponsiveContainer
     } from 'recharts';
 
-import PropTypes from 'prop-types'
 
 
+/**
+ * Display a radar chart 
+ * @component
+ * @param {Object[]} data - User performance data
+ * @returns {JSX.Element} - Performance component
+ */
 const Performance = ({data}) => {
 
-    const dataTest = [
+    const mockedData = [
         {
             "value": 80,
             "kind": "Cardio"
@@ -40,6 +46,7 @@ const Performance = ({data}) => {
             "kind": "Intensité"
         }
     ]
+    
     return (
         <StyledPerformance className='performance'>
             <ResponsiveContainer    width="100%"
@@ -52,7 +59,7 @@ const Performance = ({data}) => {
                                 left: 30
                             }} 
                             style={{ backgroundColor: "#282D30" }}
-                            data={dataTest}
+                            data={data}
                         >
                 <PolarGrid radialLines={false} />
                 <PolarAngleAxis dataKey="kind"
@@ -82,6 +89,6 @@ const Performance = ({data}) => {
 export default Performance;
 
 
-// Performance.propTypes = {
-//     data: PropTypes.array.isRequired
-// }
+Performance.propTypes = {
+    data: PropTypes.array.isRequired
+}
