@@ -46,21 +46,19 @@ const Dashboard = () => {
 
     //Fetching the data + update the states
     const getData = async () => {
-      await getUserData(id).then( data => setUserData(data))
-      await getUserActivity(id).then( data => setUserActivity(data))
-      await getUserAverageSessions(id).then( data => setUserAverageSessions(data))
-      await getUserPerformance(id).then( data => setUserPerformance(data))
-    }
 
-    getData()
+      setUserData(await getUserData(id))
+      setUserActivity(await getUserActivity(id))
+      setUserAverageSessions(await getUserAverageSessions(id)) 
+      setUserPerformance(await getUserPerformance(id)) 
 
-    if((userData !== undefined ) && (userActivity !== undefined ) && (userAverageSessions !== undefined ) && (userPerformance !== undefined )){
       setLoading(false)
     }
 
+    //Navigate to the Error page if problem with the data fetching
+    getData().catch(error => navigate('/error'))
   }, [id])
 
-  console.log(loading)
 
   return (
     <>
