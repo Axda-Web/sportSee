@@ -40,44 +40,6 @@ return null;
  */
 const Activity = ({data}) => {
 
-  const mockedData = [
-    {
-        "day": "1",
-        "kilogram": 80,
-        "calories": 240
-    },
-    {
-        "day": "2",
-        "kilogram": 80,
-        "calories": 220
-    },
-    {
-        "day": "3",
-        "kilogram": 81,
-        "calories": 280
-    },
-    {
-        "day": "6",
-        "kilogram": 81,
-        "calories": 290
-    },
-    {
-        "day": "7",
-        "kilogram": 80,
-        "calories": 160
-    },
-    {
-        "day": "8",
-        "kilogram": 78,
-        "calories": 162
-    },
-    {
-        "day": "9",
-        "kilogram": 76,
-        "calories": 390
-    }
-]
-
   return (
     <StyledActivity className='activity'>
       <ResponsiveContainer width="100%" height="100%"> 

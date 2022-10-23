@@ -53,39 +53,7 @@ const CustomCursor = ({points}) => {
  * @param {Object[]} data - User average sessions data
  * @returns {JSX.Element} - Duration component
  */
-const Duration = ({data}) => {
-
-	const mockedData = [
-            {
-                "day": 'L',
-                "sessionLength": 30
-            },
-            {
-                "day": 'M',
-                "sessionLength": 23
-            },
-            {
-                "day": 'M',
-                "sessionLength": 45
-            },
-            {
-                "day": 'J',
-                "sessionLength": 50
-            },
-            {
-                "day": 'V',
-                "sessionLength": 0
-            },
-            {
-                "day": 'S',
-                "sessionLength": 0
-            },
-            {
-                "day": 'D',
-                "sessionLength": 60
-            }
-        ]
-        
+const Duration = ({data}) => {      
     
   return (
     <StyledDuration className='duration'>

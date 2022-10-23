@@ -2,7 +2,6 @@ import PropTypes from 'prop-types'
 import StyledMacrosCard from './MacrosCard.styled'
 
 
-
 /**
  * Display a macro card
  * @component

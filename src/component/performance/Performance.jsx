@@ -19,33 +19,6 @@ import {
  * @returns {JSX.Element} - Performance component
  */
 const Performance = ({data}) => {
-
-    const mockedData = [
-        {
-            "value": 80,
-            "kind": "Cardio"
-        },
-        {
-            "value": 120,
-            "kind": "Energie"
-        },
-        {
-            "value": 140,
-            "kind": "Endurance"
-        },
-        {
-            "value": 50,
-            "kind": "Force"
-        },
-        {
-            "value": 200,
-            "kind": "Vitesse"
-        },
-        {
-            "value": 90,
-            "kind": "Intensité"
-        }
-    ]
     
     return (
         <StyledPerformance className='performance'>

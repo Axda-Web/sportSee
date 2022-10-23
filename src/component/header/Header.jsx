@@ -11,8 +11,6 @@ import StyledHeader from './Header.styled'
  */
 const Header = ({data}) => {
 
-  const mockedData = 'Alyx'
-
   return (
     <StyledHeader className='header'>
       <h1 className='title'>Bonjour <span className="title__name">{data}</span></h1>

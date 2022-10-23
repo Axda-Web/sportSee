@@ -18,11 +18,6 @@ import {
  */
 const Score = ({data}) => {
 
-  const mockedData = [{
-        uv: 12,
-        fill: '#E60000'
-        }]
-
   return (
     <StyledScore className='score'>
         <ResponsiveContainer    width="100%"
