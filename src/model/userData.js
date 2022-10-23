@@ -38,7 +38,7 @@ export default class UserData {
         case 'calorieCount':
           return {
             id: 1,
-            icon: './assets/calories.png',
+            icon: '/assets/calories.png',
             value: `${(value / 1000).toFixed(3)}kCal`,
             title: 'Calories'
           }
@@ -46,7 +46,7 @@ export default class UserData {
         case 'proteinCount':
           return {
             id: 2,
-            icon: './assets/protein.png',
+            icon: '/assets/protein.png',
             value: `${value}g`,
             title: 'Proteines'
           }
@@ -54,7 +54,7 @@ export default class UserData {
         case 'carbohydrateCount':
           return {
             id: 3,
-            icon: './assets/carbs.png',
+            icon: '/assets/carbs.png',
             value: `${value}g`,
             title: 'Glucides'
           }
@@ -62,7 +62,7 @@ export default class UserData {
         case 'lipidCount':
           return {
             id: 4,
-            icon: './assets/fat.png',
+            icon: '/assets/fat.png',
             value: `${value}g`,
             title: 'Lipides'
           }
