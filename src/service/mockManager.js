@@ -1,10 +1,13 @@
 import UserData from "../model/userData"
+import UserActivity from "../model/userActivity"
+import UserAverageSessions from "../model/userAverageSesions"
+import UserPerfomance from "../model/userPerformance"
 
 
 /**
  * Fetch the user data
  * @param {int} id user id
- * @return {object} user info
+ * @return {object} user data
  */
  const getUserData = async (id) => {
     const res = await fetch(`/dataMocked.json`)
@@ -18,21 +21,24 @@ const getUserActivity = async (id) => {
     const res = await fetch(`/dataMocked.json`)
     const json = await res.json()
     const data = json.USER_ACTIVITY.find( userInfo => userInfo.userId === parseInt(id) )
-    return data
+    const formatData = new UserActivity(data)
+    return formatData
 }
 
 const getUserAverageSessions = async (id) => {
     const res = await fetch(`/dataMocked.json`)
     const json = await res.json()
     const data = json.USER_AVERAGE_SESSIONS.find( userInfo => userInfo.userId === parseInt(id) )
-    return data
+    const formatData = new UserAverageSessions(data)
+    return formatData
 }
 
 const getUserPerformance = async (id) => {
     const res = await fetch(`/dataMocked.json`)
     const json = await res.json()
     const data = json.USER_PERFORMANCE.find( userInfo => userInfo.userId === parseInt(id) )
-    return data
+    const formatData = new UserPerfomance(data)
+    return formatData
 }
 
 export {
