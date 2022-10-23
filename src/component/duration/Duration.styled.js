@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const StyledDuration = styled.div`
-    width: 280px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
     background-color: red;
     border-radius: 5px;
     overflow: hidden;

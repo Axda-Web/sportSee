@@ -23,7 +23,7 @@ const Performance = ({data}) => {
     return (
         <StyledPerformance className='performance'>
             <ResponsiveContainer    width="100%"
-                                    aspect={1}
+                                    height='100%'
                                 >
                 <RadarChart margin={{
                                 top: 30,

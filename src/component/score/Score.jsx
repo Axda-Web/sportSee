@@ -21,7 +21,7 @@ const Score = ({data}) => {
   return (
     <StyledScore className='score'>
         <ResponsiveContainer    width="100%"
-                                aspect={1}
+                                height='100%'
                             >
           <RadialBarChart   cx="50%" 
                             cy="50%" 
