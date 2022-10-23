@@ -14,6 +14,14 @@ import { BarChart,
 
 
 /**
+ * Display a bar chart 
+ * @component
+ * @param {Object[]} data - User activity data
+ * @returns {JSX.Element} - Activity component
+ */
+const Activity = ({data}) => {
+
+  /**
  * Display a custom tooltip
  * @param {Boolean}  [Props.active='true']
  * @param {Array}   [Props.payload=[]]
@@ -31,14 +39,6 @@ import { BarChart,
 return null;
 }
 
-
-/**
- * Display a bar chart 
- * @component
- * @param {Object[]} data - User activity data
- * @returns {JSX.Element} - Activity component
- */
-const Activity = ({data}) => {
 
   return (
     <StyledActivity className='activity'>

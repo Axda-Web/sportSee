@@ -13,8 +13,15 @@ import {
 } from "recharts";
 
 
-
 /**
+ * Display a line chart 
+ * @component
+ * @param {Object[]} data - User average sessions data
+ * @returns {JSX.Element} - Duration component
+ */
+const Duration = ({data}) => {   
+     
+    /**
  * Display a custom tooltip
  * @param {Boolean}  [Props.active='true']
  * @param {Array}   [Props.payload=[]]
@@ -46,14 +53,6 @@ const CustomCursor = ({points}) => {
                     />;
 };
 
-
-/**
- * Display a line chart 
- * @component
- * @param {Object[]} data - User average sessions data
- * @returns {JSX.Element} - Duration component
- */
-const Duration = ({data}) => {      
     
   return (
     <StyledDuration className='duration'>
