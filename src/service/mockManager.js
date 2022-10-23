@@ -10,35 +10,72 @@ import UserPerfomance from "../model/userPerformance"
  * @return {object} user data
  */
  const getUserData = async (id) => {
-    const res = await fetch(`/dataMocked.json`)
-    const json = await res.json()
-    const data = json.USER_MAIN_DATA.find( userInfo => userInfo.id === parseInt(id) )
-    const formatData = new UserData(data)
-    return formatData
+    try {
+        const res = await fetch(`/dataMocked.json`)
+
+        if (res.ok) {
+            const json = await res.json()
+            const data = json.USER_MAIN_DATA.find( userInfo => userInfo.id === parseInt(id) )
+            const formatData = new UserData(data)
+            return formatData
+        } else {
+            throw new Error('Cannot fetch user data')
+        }
+    } catch(error) {
+        throw error
+    }
 }
 
 const getUserActivity = async (id) => {
-    const res = await fetch(`/dataMocked.json`)
-    const json = await res.json()
-    const data = json.USER_ACTIVITY.find( userInfo => userInfo.userId === parseInt(id) )
-    const formatData = new UserActivity(data)
-    return formatData
+    try {
+        const res = await fetch(`/dataMocked.json`)
+        console.log(res);
+        
+        if (res.ok) {
+            const json = await res.json()
+            const data = json.USER_ACTIVITY.find( userInfo => userInfo.id === parseInt(id) )
+            const formatData = new UserActivity(data)
+            return formatData
+        } else {
+            throw new Error('Cannot fetch user data')
+        }
+    } catch(error) {
+        throw error
+    }
 }
 
 const getUserAverageSessions = async (id) => {
-    const res = await fetch(`/dataMocked.json`)
-    const json = await res.json()
-    const data = json.USER_AVERAGE_SESSIONS.find( userInfo => userInfo.userId === parseInt(id) )
-    const formatData = new UserAverageSessions(data)
-    return formatData
+    try {
+        const res = await fetch(`/dataMocked.json`)
+        
+        if (res.ok) {
+            const json = await res.json()
+            const data = json.USER_AVERAGE_SESSIONS.find( userInfo => userInfo.id === parseInt(id) )
+            const formatData = new UserAverageSessions(data)
+            return formatData
+        } else {
+            throw new Error('Cannot fetch user data')
+        }
+    } catch(error) {
+        throw error
+    }
 }
 
 const getUserPerformance = async (id) => {
-    const res = await fetch(`/dataMocked.json`)
-    const json = await res.json()
-    const data = json.USER_PERFORMANCE.find( userInfo => userInfo.userId === parseInt(id) )
-    const formatData = new UserPerfomance(data)
-    return formatData
+    try {
+        const res = await fetch(`/dataMocked.json`)
+        
+        if (res.ok) {
+            const json = await res.json()
+            const data = json.USER_PERFORMANCE.find( userInfo => userInfo.id === parseInt(id) )
+            const formatData = new UserPerfomance(data)
+            return formatData
+        } else {
+            throw new Error('Cannot fetch user data')
+        }
+    } catch(error) {
+        throw error
+    }
 }
 
 export {

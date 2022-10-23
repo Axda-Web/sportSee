@@ -10,10 +10,19 @@ import UserPerfomance from "../model/userPerformance"
  * @return {object} user data
  */
 const getUserData = async (id) => {
-    const res = await fetch(`http://localhost:3000/user/${id}`)
-    const json = await res.json()
-    const formatData = new UserData(json.data)
-    return formatData
+    try {
+        const res = await fetch(`http://localhost:3000/user/${id}`)
+
+        if (res.ok) {
+            const json = await res.json()
+            const formatData = new UserData(json.data)
+            return formatData
+        } else {
+            throw new Error('Cannot fetch user data')
+        }
+    } catch(error) {
+        throw error
+    }
 }
 
 
@@ -23,10 +32,19 @@ const getUserData = async (id) => {
  * @return {object} user info
  */
 const getUserActivity = async (id) => {
-    const res = await fetch(`http://localhost:3000/user/${id}/activity`)
-    const json = await res.json()
-    const formatData = new UserActivity(json.data)
-    return formatData
+    try {
+        const res = await fetch(`http://localhost:3000/user/${id}/activity`)
+
+        if (res.ok) {
+            const json = await res.json()
+            const formatData = new UserActivity(json.data)
+            return formatData
+        } else {
+            throw new Error('Cannot fetch user data')
+        }
+    } catch(error) {
+        throw error
+    }
 }
 
 
@@ -36,10 +54,19 @@ const getUserActivity = async (id) => {
  * @return {object} user info
  */
 const getUserAverageSessions = async (id) => {
-    const res = await fetch(`http://localhost:3000/user/${id}/average-sessions`)
-    const json = await res.json()
-    const formatData = new UserAverageSessions(json.data)
-    return formatData
+    try {
+        const res = await fetch(`http://localhost:3000/user/${id}/average-sessions`)
+
+        if (res.ok) {
+            const json = await res.json()
+            const formatData = new UserAverageSessions(json.data)
+            return formatData
+        } else {
+            throw new Error('Cannot fetch user data')
+        }
+    } catch(error) {
+        throw error
+    }
 }
 
 
@@ -49,10 +76,19 @@ const getUserAverageSessions = async (id) => {
  * @return {object} user info
  */
 const getUserPerformance = async (id) => {
-    const res = await fetch(`http://localhost:3000/user/${id}/performance`)
-    const json = await res.json()
-    const formatData = new UserPerfomance(json.data)
-    return formatData
+    try {
+        const res = await fetch(`http://localhost:3000/user/${id}/performance`)
+
+        if (res.ok) {
+            const json = await res.json()
+            const formatData = new UserPerfomance(json.data)
+            return formatData
+        } else {
+            throw new Error('Cannot fetch user data')
+        }
+    } catch(error) {
+        throw error
+    }
 }
 
 export {
