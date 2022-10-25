@@ -8,7 +8,7 @@ const StyledApp = styled.div`
 
     .top-nav {
         grid-area: topNav;
-        height: 70px;
+        height: 80px;
 
         @media (min-width: 1200px) {
             height: 90px;
@@ -17,7 +17,7 @@ const StyledApp = styled.div`
 
     .side-nav {
         grid-area: sideNav;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 80px);
         width: 80px;
 
         @media (min-width: 1200px) {
@@ -28,7 +28,7 @@ const StyledApp = styled.div`
 
     .main-content {
         grid-area: mainContent;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 80px);
 
         @media (min-width: 1200px) {
             height: calc(100vh - 90px);
