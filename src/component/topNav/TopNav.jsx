@@ -13,10 +13,10 @@ const TopNav = () => {
 				alt="SportSee logo"
 			/>
 		<nav className='nav'>
-			<span className="nav__item">Accueil</span>
-			<span className="nav__item">Profil</span>
-			<span className="nav__item">Réglages</span>
-			<span className="nav__item">Communauté</span>
+			<a href="index.html" className="nav__item">Accueil</a>
+			<a href="index.html" className="nav__item">Profil</a>
+			<a href="index.html" className="nav__item">Réglages</a>
+			<a href="index.html" className="nav__item">Communauté</a>
 		</nav>
     </StyledTopNav>
   )
