@@ -10,7 +10,7 @@ const StyledDashboard = styled.section`
     grid-template-areas:   'header header header header'
                             'activity activity activity macro'
                             'square square square macro';
-    grid-gap: 20px;
+    gap: 20px;
 
     .header {
         grid-area: header;
@@ -21,11 +21,11 @@ const StyledDashboard = styled.section`
     }
 
     .squares-container {
-        height: 350px;
         width: 100%;
         grid-area: square;
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         gap: 5px;
     }
 
@@ -33,7 +33,7 @@ const StyledDashboard = styled.section`
         grid-area: macro;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-height: 940px) {
         padding: 80px;
         }
 

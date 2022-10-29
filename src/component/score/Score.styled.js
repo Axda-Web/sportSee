@@ -9,7 +9,7 @@ const StyledScore = styled.div`
     .title {
         font-size: .875rem;
 
-        @media (min-width: 1200px) {
+        @media (min-height: 940px) {
             font-size: .9375rem;
         }
     }
@@ -17,7 +17,7 @@ const StyledScore = styled.div`
     .score {
         font-size: 1.375rem;
 
-        @media (min-width: 1200px) {
+        @media (min-height: 940px) {
             font-size: 1.625rem;
         }
     }
@@ -25,12 +25,12 @@ const StyledScore = styled.div`
     .text {
         font-size: .875rem;
 
-        @media (min-width: 1200px) {
+        @media (min-height: 940px) {
             font-size: .9375rem;
         }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-height: 940px) {
             width: 260px;
             height: 260px;
         }

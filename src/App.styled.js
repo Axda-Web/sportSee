@@ -10,7 +10,7 @@ const StyledApp = styled.div`
         grid-area: topNav;
         height: 80px;
 
-        @media (min-width: 1200px) {
+        @media (min-height: 940px) {
             height: 90px;
         }
     }
@@ -20,7 +20,7 @@ const StyledApp = styled.div`
         height: calc(100vh - 80px);
         width: 80px;
 
-        @media (min-width: 1200px) {
+        @media (min-height: 940px) {
             height: calc(100vh - 90px);
             width: 100px;
         }
@@ -30,7 +30,7 @@ const StyledApp = styled.div`
         grid-area: mainContent;
         height: calc(100vh - 80px);
 
-        @media (min-width: 1200px) {
+        @media (min-height: 940px) {
             height: calc(100vh - 90px);
         }
     }

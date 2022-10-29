@@ -30,7 +30,7 @@ const StyledMacrosCard = styled.article`
 		font-weight: 700;
 		margin: 0;
 
-		@media (min-width: 1200px) {
+		@media (min-height: 940px) {
             font-size: 1.25rem;
         }
 	}
@@ -40,12 +40,12 @@ const StyledMacrosCard = styled.article`
 		font-weight: 500;
 		margin: 0;
 
-		@media (min-width: 1200px) {
+		@media (min-height: 940px) {
             font-size: .875rem;
         }
 	}
 
-	@media (min-width: 1200px) {
+	@media (min-height: 940px) {
             width: 260px;
             height: 125px;
         }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledActivity = styled.div`
-    height: 270px;
+    height: 260px;
     background: #FBFBFB;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
     border-radius: 5px;
@@ -22,8 +22,8 @@ const StyledActivity = styled.div`
         text-align: center;
     }
 
-    @media (min-width: 1200px) {
-            height: 320px;
+    @media (min-height: 940px) {
+            height: 300px;
         }
 `
 

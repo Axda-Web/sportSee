@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
             color: red;
         }
 
-        @media (min-width: 1200px) {
+        @media (min-height: 940px) {
             font-size: 3rem;
         }
     }
@@ -21,7 +21,7 @@ const StyledHeader = styled.header`
     .subtitle {
         font-size: 1rem;
 
-        @media (min-width: 1200px) {
+        @media (min-height: 940px) {
             font-size: 1.125rem;
         }
     }

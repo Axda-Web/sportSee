@@ -11,7 +11,7 @@ const StyledTopNav = styled.div`
         height: 90px;
         padding: 20px;
 
-        @media (min-width: 1200px) {
+        @media (min-height: 940px) {
             height: 100px;
             padding: 20px;
         }
@@ -29,7 +29,7 @@ const StyledTopNav = styled.div`
             text-decoration: none;
             color: inherit;
 
-            @media (min-width: 1200px) {
+            @media (min-height: 940px) {
                 font-size: 1.5rem;
             }
         }

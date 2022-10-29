@@ -27,7 +27,7 @@ const StyledSideNav = styled.div`
         font-size: .625rem;
         white-space: nowrap;
 
-        @media (min-width: 1200px) {
+        @media (min-height: 940px) {
             font-size: .75rem;
         }
     }

@@ -6,7 +6,7 @@ const StyledPerformance = styled.div`
     border-radius: 5px;
     overflow: hidden;
 
-    @media (min-width: 1200px) {
+    @media (min-height: 940px) {
             width: 260px;
             height: 260px;
         }

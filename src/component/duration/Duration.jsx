@@ -56,7 +56,7 @@ const CustomCursor = ({points}) => {
     
   return (
     <StyledDuration className='duration'>
-        <ResponsiveContainer width='100%' aspect={1}>
+        <ResponsiveContainer width='100%' height="100%">
                 <LineChart  style={{backgroundColor: "#FF0000"}}
                             width={258}
                             height={263}

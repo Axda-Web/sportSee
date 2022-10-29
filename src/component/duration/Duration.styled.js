@@ -26,7 +26,7 @@ const StyledDuration = styled.div`
         font-size: 14px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-height: 940px) {
             width: 260px;
             height: 260px;
         }
