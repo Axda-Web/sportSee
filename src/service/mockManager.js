@@ -33,7 +33,7 @@ const getUserActivity = async (id) => {
         
         if (res.ok) {
             const json = await res.json()
-            const data = json.USER_ACTIVITY.find( userInfo => userInfo.id === parseInt(id) )
+            const data = json.USER_ACTIVITY.find( userInfo => userInfo.userId === parseInt(id) )
             const formatData = new UserActivity(data)
             return formatData
         } else {
@@ -50,7 +50,7 @@ const getUserAverageSessions = async (id) => {
         
         if (res.ok) {
             const json = await res.json()
-            const data = json.USER_AVERAGE_SESSIONS.find( userInfo => userInfo.id === parseInt(id) )
+            const data = json.USER_AVERAGE_SESSIONS.find( userInfo => userInfo.userId === parseInt(id) )
             const formatData = new UserAverageSessions(data)
             return formatData
         } else {
@@ -67,7 +67,7 @@ const getUserPerformance = async (id) => {
         
         if (res.ok) {
             const json = await res.json()
-            const data = json.USER_PERFORMANCE.find( userInfo => userInfo.id === parseInt(id) )
+            const data = json.USER_PERFORMANCE.find( userInfo => userInfo.userId === parseInt(id) )
             const formatData = new UserPerfomance(data)
             return formatData
         } else {

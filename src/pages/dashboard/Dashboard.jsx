@@ -56,7 +56,9 @@ const Dashboard = () => {
     }
 
     //Navigate to the Error page if problem with the data fetching
-    getData().catch(error => navigate('/error'))
+    getData().catch(error => { 
+      return navigate('/error')
+    }) 
   }, [id])
 
 

@@ -95,6 +95,7 @@ const CustomCursor = ({points}) => {
                         />
                     <Tooltip    content={<CustomTooltip/>}
                                 cursor={<CustomCursor/>}
+                                wrapperStyle={{ outline: 'none' }}
                             />
                     <Line   type="natural"
                             dataKey="sessionLength" 

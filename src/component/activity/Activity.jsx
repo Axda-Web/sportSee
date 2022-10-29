@@ -85,7 +85,7 @@ return null;
                     tickMargin={45}
                     minTickGap={27}
                   />
-            <Tooltip content={<CustomTooltip/>} />
+            <Tooltip wrapperStyle={{ outline: 'none' }} content={<CustomTooltip/>} />
             <Legend className='legend'
                     verticalAlign='top'
                     align='right'
