@@ -80,4 +80,4 @@ To get started with the SportSee project, follow the steps below:
   - Uncomment line 11 - `import { getUserData, getUserActivity, getUserAverageSessions, getUserPerformance } from '../../service/mockManager'`
   - Comment line 8 - `import { getUserData, getUserActivity, getUserAverageSessions, getUserPerformance } from '../../service/apiManager'`
 
-A deployed version of the SportSee project is available on Vercel at [SportSee](https://daily-quotes-beryl.vercel.app/).
+A deployed version of the SportSee project is available on Vercel at [SportSee](https://sport-see-five.vercel.app/user/12).
