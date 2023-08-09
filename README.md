@@ -13,7 +13,6 @@ This project explores various concepts and features including:
 
 - React State
 - CSS in JS
-- CSS Animations
 - ES6
 - REST API
 
