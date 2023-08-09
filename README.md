@@ -1,13 +1,13 @@
 # SportSee
 
-[![React.js](https://img.shields.io/badge/React.js-18.1.0-61DAFB?logo=react&logoColor=white&style=flat-square)](https://reactjs.org/)
+[![React.js](https://img.shields.io/badge/React.js-18.2.0-61DAFB?logo=react&logoColor=white&style=flat-square)](https://reactjs.org/)
 [![Styled Components](https://img.shields.io/badge/Styled_Components-5.3.5-%23DB7093?logo=styled-components&logoColor=white&style=flat-square)](https://styled-components.com/)
 
 ![screenshot](/screenshot.jpg)
 
 ## Description
 
-Build a user dashboard displaying complex data using React and the Recharts library. It also allows to tweet the chosen quote on its Twitter account. Use of the Styled-components library for the formatting.
+Build a user dashboard displaying complex data using React and the Recharts library. Use of the Styled-components library for the formatting.
 
 This project explores various concepts and features including:
 
@@ -21,7 +21,7 @@ and more.
 
 ## Technologies Used
 
-- [React.js](https://reactjs.org/) - Version 18.1.0
+- [React.js](https://reactjs.org/) - Version 18.2.0
 - [Styled Components](https://styled-components.com/) - Version 5.3.5
 - [Recharts](https://recharts.org/) - Version 2.1.14
 
@@ -66,7 +66,7 @@ To get started with the SportSee project, follow the steps below:
 
 ### Launching the project
 
-- Fork the repository [SportSee-BackEnd](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard).
+- Fork the repository [SportSee-BackEnd](https://sport-see-five.vercel.app/user/12).
 - Clone it on your computer.
 - The `yarn` command will allow you to install the dependencies.
 - The `yarn dev` command will allow you to run the micro API.
